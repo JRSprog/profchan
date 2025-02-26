@@ -1,0 +1,476 @@
+/* for balance history *********/
+#balabce {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#balabce p {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Current Balance Card */
+.cbalance {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.cbalance h2 {
+    font-size: 30px;
+    color: #333;
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.cbalance h4 {
+    font-size: 35px;
+    color: gray;
+    margin-left: 15px;
+}
+
+/* Toggle Button */
+#toggleButton {
+    background-color: #255de9;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: background-color 0.3s;
+}
+
+#toggleButton:hover {
+    background-color: #042173;
+}
+
+/* Hidden Content Section */
+#content {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    display: none;
+}
+
+#content p {
+    margin: 0;
+}
+
+/* Select Element */
+select {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Table Styles */
+.hbalance {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+}
+
+.hbalance thead th {
+    background-color: #212121;
+    color: white;
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.hbalance tbody td {
+    background-color: #F6F5F2;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+
+/* Hidden Button */
+.hidden button {
+    background-color: blue;
+    padding: 15px 20px;
+    width: 30%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.hidden button:hover {
+    background-color: #002D62;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Balance Section */
+    #balabce {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    #balabce p {
+        font-size: 24px;
+    }
+
+    .cbalance {
+        padding: 12px;
+    }
+
+    .cbalance h2 {
+        font-size: 26px;
+        margin-left: 10px;
+    }
+
+    .cbalance h4 {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    #toggleButton {
+        padding: 15px 25px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    #content {
+        font-size: 12px;
+    }
+
+    select {
+        font-size: 18px;
+    }
+
+    /* Table */
+    .hbalance thead th {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .hbalance tbody td {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .hidden button {
+        width: 45%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Balance Section */
+    #balabce {
+        width: 90%;
+        margin-top: 20px;
+        padding: 10px;
+        margin-right: 17px;
+    }
+
+    #balabce p {
+        font-size: 20px;
+    }
+
+    .cbalance {
+        padding: 10px;
+    }
+
+    .cbalance h2 {
+        font-size: 22px;
+        margin-left: 5px;
+    }
+
+    .cbalance h4 {
+        font-size: 25px;
+        margin-left: 5px;
+    }
+
+    #toggleButton {
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    #content {
+        font-size: 10px;
+    }
+
+    select {
+        font-size: 16px;
+    }
+
+    /* Table */
+    .hbalance thead th {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .hbalance tbody td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .hidden button {
+        width: 60%;
+        font-size: 16px;
+    }
+}
+
+
+      /***   for onfees */
+      #fees {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    #child-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .payment-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+        width: 250px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .payment-card p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .payment-card strong {
+        color: #333;
+    }
+
+    /* Mobile responsiveness */
+    @media screen and (max-width: 768px) {
+        #fees {
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .payment-card {
+            width: 100%;
+            max-width: 350px;
+            margin: 15px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .payment-card {
+            width: 100%;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 600px;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+    }
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 15px;
+        position: relative;
+        cursor: pointer;
+    }
+    .profile-picture input {
+        display: none;
+    }
+    .camera-icon {
+        font-size: 24px;
+        color: #555;
+    }
+    .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .form-group i {
+        position: absolute;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 5px;
+        color: gray;
+    }
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        color: gray;
+    }
+    .form-group input {
+        width: 95%;
+        padding:10px 10px 10px 30px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .form-group input[readonly] {
+        background-color: #f4f4f4;  
+        color: #777;
+        cursor: not-allowed;
+    }
+    
+    
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+        .container {
+            width: 85%;
+            padding: 15px;
+        }
+        .form-group input {
+            padding: 12px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .container {
+            width: 95%;
+            padding: 10px;
+        }
+        .form-group input {
+            padding: 14px;
+            width: 90%;
+        }
+        .form-group i {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+    }
+
+    .container2 {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 90%;
+        justify-content: center;
+        justify-self: center;
+    }
+    .hidden {
+        display: none;
+    }
+    .form-group2 {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .form-group2 label {
+        font-weight: bold;
+    }
+    .form-group2 i {
+      position: absolute;
+      margin-top: 32px;
+      left: 100px;
+      font-size: 20px;
+      color: gray;
+    }
+    .form-group2 input {
+        width: 95%;
+        padding: 10px 10px 10px 35px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .btn2 {
+        padding: 10px 20px;
+        border: none;
+        width: 50%;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .btn2:hover {
+        background-color: #0056b3;
+    }
+    /* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container2 {
+        width: 85%;
+        padding: 15px;
+    }
+    .form-group2 input {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container2 {
+        width: 85%;
+        padding: 10px;
+    }
+    .form-group2 input {
+        padding: 14px;
+        width: 85%;
+        padding: 10px 10px 10px 35px;
+    }
+    .form-group2 i {
+        margin-top: 33px;
+        left: 60px;
+    }
+}

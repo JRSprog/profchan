@@ -1,0 +1,226 @@
+     /* Basic styling */
+     body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100%;
+        background-color: white;
+      }
+      
+      ul {
+      list-style-type: none;
+      padding: 0; /* Remove any default padding */
+      margin: 0; /* Remove any default margin */
+      margin-top: 15px;
+      }
+      
+      /* Header styles */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        background-color: white;
+        box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+        color: black;
+        margin-left: 30px;
+        margin-top: 10px;
+        width: 93%; /* Default full width */
+        top: 0;
+        position: sticky;
+      }
+      
+      /* Burger button always visible */
+      .burger-container {
+        cursor: pointer;
+        display: block;
+      }
+      
+      .burger-button {
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+      }
+      
+      /* Dropdown for image on the right */
+      .dropdown-container {
+        position: relative;
+        margin-left: auto; /* Push the dropdown to the right side */
+      }
+      
+      .dropdown {
+        position: relative;
+      }
+      
+      .dropbtn {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        right: 0; /* Align the dropdown to the right side */
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .main-content {
+        margin-left: 15px;
+      }
+      
+      .main-content h1 {
+        margin-left: 30px;
+      }
+      
+      /* Sidebar styles */
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0; /* Sidebar now opens from the left */
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.3s ease;
+        z-index: 1000;
+        padding-top: 60px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 10px;
+      }
+      
+      .sidebar-nav li {
+        padding: 10px;
+      }
+      
+      .sidebar-nav li a {
+        display: flex;
+        align-items: center;
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+      
+      .sidebar-nav li a:hover {
+        background-color: #34495e;
+        color: white;
+        border-radius: 10px;
+      }
+      
+      .sidebar-nav li a i {
+        margin-right: 10px;
+      }
+      
+      .sidebar-content {
+        color: black;
+        text-align: center;
+        border-bottom: gray solid 2px;
+      }
+      
+      .sidebar-image {
+        width: 40%;
+        width: 40%;
+        height: auto;
+        margin-bottom: 5px;
+      }
+      
+      .sidebar-text {
+        font-size: 15px;
+      }
+      
+      /* Overlay background when sidebar is open */
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 999;
+      }
+      
+      /* Show sidebar and overlay when opened */
+      .sidebar.open {
+        width: 300px;
+      }
+      
+      .overlay.show {
+        display: block;
+      }
+      
+      /* Mobile responsive styles */
+      @media screen and (max-width: 768px) {
+        /* Make the header width smaller and centered */
+        header {
+            width: 87%;
+            margin: 0 auto;
+            padding: 15px 20px;
+            margin-left: 10px;
+        }
+      
+        /* Burger button size */
+        .burger-button {
+            font-size: 24px;
+        }
+      
+        /* Dropdown image size */
+        .dropbtn {
+            width: 30px;
+            height: 30px;
+        }
+      
+        /* Mobile-specific sidebar size and adjustments */
+        .sidebar-content {
+            font-size: 14px;
+        }
+      
+        /* Sidebar items font size */
+        .sidebar-nav li a {
+            font-size: 14px;
+        }
+      
+        .sidebar-nav li a i {
+            font-size: 18px;
+        }
+      
+        /* Reduce padding for sidebar items */
+        .sidebar-nav li {
+            padding: 8px;
+        }
+      
+        body.open-sidebar {
+            overflow: hidden;
+        }
+      
+        .hidden button {
+          width: 250px;
+        }
+      
+      }
+      
+      @media screen and (min-width: 769px) {
+        /* Burger button is visible on larger screens as well */
+        .burger-container {
+            display: block;
+        }
+      
+        .dropdown-container {
+            display: block; /* Show the dropdown on larger screens */
+        }
+      }
